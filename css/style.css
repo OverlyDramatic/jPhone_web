@@ -1,0 +1,156 @@
+/* BEM */
+
+/* 设置body样式 */
+body{
+  height: 3000px;
+}
+
+/* 取消a默认样式 */
+a{
+  text-decoration: none;
+}
+
+.header{
+  /* width: 1200px; */
+  background: #f6f6f6;
+
+  /* position: relative; */
+  /* fixed */
+  /* position: fixed; */
+}
+
+.header_wrap{
+  height: 60px;
+  width: 1152px;
+  margin: 0 auto;
+  padding: 20px 24px 0 24px;
+  position: relative;
+}
+
+.header_logo{
+  display: block;
+  width: 120px;
+  height: 38px;
+  background: url('../img/logo.png') no-repeat center left;
+  background-size: 38px 38px;
+  /* 字体 */
+  font: 20px/38px MicrosoftYaHeiUILight;
+  color: #07111b;
+  text-indent: 50px;
+}
+
+.header_nav{
+  position: absolute;
+  top: 20px;
+  right: 24px;
+}
+.header_nav-item{
+  display: inline-block;
+  height: 40px;
+
+  margin: 0 0 0 40px;
+
+  text-align: center;
+  font: 14px/40px MicrosoftYaHeiUILight;
+  color: #07111b;
+}
+
+.header_nav-item_buy{
+  padding: 0 16px 0 18px;
+  color: #fff;
+  background: #07111b;
+  border-radius: 2px;
+}
+
+.header_nav-item_status_active{
+  color: #f01414;
+}
+
+.header_nav-item_status_active::after{
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #f01414;
+}
+
+/* fixed侧边栏 */
+.sidebar{
+  width: 56px;
+  height: 192px;
+  position: fixed;
+  right: 0px;
+  bottom: 139px;
+
+  background: #fff;
+  z-index: 3;
+}
+
+.sidebar_item{
+  display: block;
+  text-align: center;
+  line-height: 48px;
+  height: 48px;
+  width: 56px;
+
+  color: #93999f;
+}
+
+.sidebar_item:nth-last-child(n+2)::after{
+  content: ' ';
+  display: block;
+  width: 24px;
+  height: 1px;
+  bottom: -1;
+  margin: 0 auto;
+  background: #edf1f2;
+}
+
+.sidebar_item_status_active{
+  color: #07111b;
+}
+
+/* 第一屏 */
+.screen-1{
+  height: 800px;
+  /* margin: 0 auto; */
+  background: url('../img/background.png') no-repeat center center;
+  background-size: cover;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.screen-1_heading{
+  text-align: center;
+  font:normal 46px MicrosoftYaHeiUILight;
+  color: #4d5554;
+
+  padding: 152px 0 105px 0;
+}
+
+.screen-1_heading b{
+  color: #f01414;
+}
+
+.screen-1_phone{
+  width: 1375px;
+  height: 305px;
+  background: url('../img/phone.png') no-repeat;
+  position: absolute;
+  left: 50%;
+  margin-left: -687px;
+  z-index: 2;
+}
+
+.screen-1_shadow{
+  width: 1331px;
+  height: 491px;
+  background: url('../img/shadow.png') no-repeat;
+  /* 居中 */
+  position: absolute;
+  left: 50%;
+  margin-top: 72px;
+  margin-left: -665px;
+  z-index: 1;
+}
