@@ -154,3 +154,119 @@ a{
   margin-left: -665px;
   z-index: 1;
 }
+
+/* 第二屏 */
+.screen-2{
+  height: 800px;
+  background: #fafafa;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.screen-2_heading{
+  text-align: center;
+  font:normal 46px MicrosoftYaHeiUILight;
+  color: #f01414;
+  padding: 96px 0 24px 0;
+}
+
+.screen-2_subHeading{
+  text-align: center;
+  font:300 16px/28px MicrosoftYaHeiUILight;
+  color: #2c3137;
+  padding-bottom: 41px;
+}
+
+.screen-2_phone{
+  width: 928px;
+  height: 873px;
+
+  background: url('../img/phone_2.png');
+
+  position: absolute;
+  left: 50%;
+  margin-left: -364px;
+  z-index: 2;
+}
+
+.screen-2_pointer-right{
+  width: 96px;
+  height: 23px;
+  padding-right: 112px;
+  background: url('../img/pointer-right.png') no-repeat center right;
+  font: 300 24px/23px MicrosoftYaHeiUILight;
+  color: #4d555d;
+}
+
+/* 高清摄像 */
+.screen-2_pointer-1{
+  position: absolute;
+  left: -150px;
+  top: 156px;
+}
+
+/* 超薄机身 */
+.screen-2_pointer-left{
+  width: 96px;
+  height: 23px;
+  padding-left: 112px; 
+  background: url('../img/pointer-left.png') no-repeat center left;
+  font: 300 24px/23px MicrosoftYaHeiUILight;
+  color: #4d555d;
+}
+
+/* 大屏显示 */
+.screen-2_pointer-2{
+  position: absolute;
+  right: 142px;
+  top: 32px;
+}
+
+.screen-2_pointer-3{
+  position: absolute;
+  right: 38px;
+  top: 336px;
+}
+
+/* 第三屏 */
+.screen-3{
+  height: 800px;
+  /* margin: 0 auto; */
+  background: #f01414 url('../img/background-3.png') no-repeat center center;
+  background-size: cover;
+
+  overflow: hidden;
+}
+
+.screen-3_wrap{
+  width: 1200px;
+  position: relative;
+
+
+  /* position: absolute; */
+  margin: 0 auto;
+}
+
+.screen-3_heading{
+  font:lighter 46px/46px MicrosoftYaHeiUILight;
+  color: #fff;
+
+  padding: 96px 0 30px 0;
+}
+
+.screen-3_subHeading{
+  font:300 16px/28px MicrosoftYaHeiUILight;
+  color: #fff;
+}
+
+.screen-3_phone{
+  width: 750px;
+  height: 900px;
+
+  background: url('../img/phone_3.png') no-repeat;
+
+  position: absolute;
+  top: 200px;
+  right: 0;
+}
