@@ -2,7 +2,7 @@
 
 /* 设置body样式 */
 body{
-  height: 3000px;
+  height: 4000px;
 }
 
 /* 取消a默认样式 */
@@ -265,8 +265,76 @@ a{
   height: 900px;
 
   background: url('../img/phone_3.png') no-repeat;
+  background-size: cover;
 
   position: absolute;
   top: 200px;
   right: 0;
+}
+
+.screen-3_info_wrap{
+  width: 304px;
+  height: 264px;
+
+  position: absolute;
+  top: 397px;
+  margin-left: 3px;
+}
+
+.screen-3_info{
+  width: 138px;
+  height: 92px;
+
+  position: absolute;
+
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 4px;
+
+  text-align: center;
+  color: #fff;
+  padding-top: 26px;
+  font-size: 16px;
+}
+
+.screen-3_info b{
+  font: 300 48px/48px MicrosoftYaHeiUILight;
+}
+
+.screen-3_info-1{
+  top: 0;
+  left: 0;
+}
+
+.screen-3_info-2{
+  top: 0;
+  left: 164px;
+}
+
+.screen-3_info-3{
+  top: 144px;
+  left: 0;
+}
+
+.screen-3_info-4{
+  top: 144px;
+  left: 164px;
+}
+
+.screen-4{
+  height: 800px;
+  background: #fff;
+}
+
+.screen-4_heading{
+  font: 300 48px/48px MicrosoftYaHeiUILight;
+  color: #f01414;
+  text-align: center;
+  margin-top: 137px;
+}
+
+.screen-4_subHeading{
+  font: 300 16px/16px MicrosoftYaHeiUILight;
+  color: #07111b;
+  text-align: center;
+  margin-top: 35px;
 }
