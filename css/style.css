@@ -1,10 +1,5 @@
 /* BEM */
 
-/* 设置body样式 */
-body{
-  height: 4000px;
-}
-
 /* 取消a默认样式 */
 a{
   text-decoration: none;
@@ -323,18 +318,188 @@ a{
 .screen-4{
   height: 800px;
   background: #fff;
+  position: relative;
 }
 
 .screen-4_heading{
   font: 300 48px/48px MicrosoftYaHeiUILight;
   color: #f01414;
   text-align: center;
-  margin-top: 137px;
+  padding-top: 134px;
 }
 
 .screen-4_subHeading{
   font: 300 16px/16px MicrosoftYaHeiUILight;
   color: #07111b;
   text-align: center;
-  margin-top: 35px;
+  padding-top: 35px;
+}
+
+.screen-4_phone_wrap{
+  height: 341px;
+  width: 270px;
+  position: absolute;
+}
+
+.screen-4_phone_red_wrap{
+  top: 305px;
+  left: 50%;
+  margin-left: -600px
+}
+
+.screen-4_phone_gold_wrap{
+  top: 305px;
+  left: 50%;
+  margin-left: -290px;
+}
+
+.screen-4_phone_silver_wrap{
+  top: 305px;
+  left: 50%;
+  margin-left: 21px;
+}
+
+.screen-4_phone_black_wrap{
+  top: 305px;
+  left: 50%;
+  margin-left: 331px;
+}
+
+.screen-4_phone{
+  width: 270px;
+  height: 270px;
+}
+
+.screen-4_phone_red{
+  background: url('../img/phone_red.png');
+  background-size: cover;
+}
+
+.screen-4_phone_gold{
+  background: url('../img/phone_gold.png');
+  background-size: cover;
+}
+
+.screen-4_phone_silver{
+  background: url('../img/phone_silver.png');
+  background-size: cover;
+}
+
+.screen-4_phone_black{
+  background: url('../img/phone_black.png');
+  background-size: cover;
+}
+
+.screen-4_phone_heading{
+  margin-top: 20px;
+  text-align: center;
+
+  color: #93999f;
+}
+
+.screen-4_phone_heading b{
+  color: #07111b;
+  font: 16px/40px MicrosoftYaHeiUILight;
+}
+
+.screen_5{
+  height: 800px;
+  background: #d9dde1;
+  position: relative;
+  overflow: hidden;
+}
+
+.screen_5_heading{
+  font: 300 48px/48px MicrosoftYaHeiUILight;
+  color: #f01414;
+  text-align: center;
+  padding-top: 135px;
+}
+
+.screen_5_subHeading{
+  font: 300 16px/16px MicrosoftYaHeiUILight;
+  color: #07111b;
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 135px;
+}
+
+.screen_5_phone_wrap{
+  width: 1920px;
+  height: 432px;
+  position: absolute;
+  left: 50%;
+  margin-left: -960px;
+}
+
+.screen_5_phone-piano{
+  width: 942px;
+  height: 483px;
+  background: url('../img/phone_piano.png');
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  margin-left: -471px;
+}
+
+.screen_5_phone-game{
+  /* 792*452 */
+  width: 848px;
+  height: 508px;
+  background: url('../img/phone_game.png');
+  position: absolute;
+  left: 50%;
+  margin-left: -1351px;
+  margin-top: 74px;
+}
+
+.screen_5_phone-browser{
+  /* 792*452 */
+  width: 848px;
+  height: 508px;
+  background: url('../img/phone_browser.png');
+  position: absolute;
+  left: 50%;
+  margin-left: 503px;
+  margin-top: 74px;
+}
+
+.screen_6{
+  height: 320px;
+  width: 2560px;
+  background: url('../img/background_screen_6.png') no-repeat;
+  position: relative;
+  left: 50%;
+  margin-left: -1280px;
+}
+
+.screen_6_buy{
+  width: 240px;
+  height: 80px;
+  margin-top: 120px;
+
+  font: 300 24px/80px MicrosoftYaHeiUILight;
+  color: #fff;
+  text-align: center;
+
+  background: #f01414;
+  border-radius: 4px;
+
+  position: absolute;
+  left: 50%;
+  margin-left: -120px;
+}
+
+/* footer */
+.footer{
+  height: 80px;
+  background: #07111b;
+}
+
+.footer_info{
+  padding-top: 35px;
+  font: 300 12px MicrosoftYaHeiUILight;
+  color: #fff;
+
+  text-align: center;
 }
