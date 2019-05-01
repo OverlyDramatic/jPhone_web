@@ -5,13 +5,14 @@ a{
   text-decoration: none;
 }
 
-.header{
-  /* width: 1200px; */
-  background: #f6f6f6;
+.wrap{
+  height: 80px;
+}
 
-  /* position: relative; */
-  /* fixed */
-  /* position: fixed; */
+.header{
+  background: #f6f6f6;
+  position: fixed;
+  z-index: 3;
 }
 
 .header_wrap{
@@ -61,12 +62,25 @@ a{
   color: #f01414;
 }
 
-.header_nav-item_status_active::after{
+.header_nav-item::after{
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.header_nav-item_status_active::after,
+.header_nav-item:hover::after{
   content: ' ';
   display: block;
   width: 100%;
   height: 2px;
   background: #f01414;
+}
+
+.header_nav-item_buy:hover::after{
+  display: none;
 }
 
 /* fixed侧边栏 */
@@ -79,6 +93,7 @@ a{
 
   background: #fff;
   z-index: 3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .sidebar_item{
@@ -101,7 +116,8 @@ a{
   background: #edf1f2;
 }
 
-.sidebar_item_status_active{
+.sidebar_item_status_active,
+.sidebar_item:hover{
   color: #07111b;
 }
 

@@ -1,3 +1,26 @@
+/* header */
+.header,
+.header_logo,
+.header_nav-item
+{
+  transition: all 0.5s;
+}
+
+.header_status_black{
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.header_logo_status_black,
+.header_nav-item_status_black{
+  color: #fff;
+}
+
+.header_nav-item::after,
+.sidebar_item{
+  transition: all 1s;
+}
+
+/* 第一屏 */
 /* screen-1_heading */
 .screen-1_heading{
   transition: all 1s;
@@ -8,10 +31,17 @@
   transition: all 1s 0.5s;
 }
 
-.screen-1_heading_animate_init,
-.screen-1_shadow_animate_init{
+/* 第一屏init写入静态属性 */
+.screen-1_heading,
+.screen-1_shadow{
   opacity: 0;
   transform: translate(0,100%);
+}
+
+/* .screen-1_phone单独初始样式 */
+.screen-1_phone{
+  opacity: 0;
+  transform: translate(0,-100%);
 }
 
 .screen-1_heading_animate_done,
@@ -19,11 +49,6 @@
 .screen-1_shadow_animate_done{
   opacity: 1;
   transform: translate(0,0);
-}
-/* .screen-1_phone单独初始样式 */
-.screen-1_phone_animate_init{
-  opacity: 0;
-  transform: translate(0,-100%);
 }
 
 
